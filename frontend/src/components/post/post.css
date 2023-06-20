@@ -10,3 +10,19 @@
     height: 100%;
     object-fit: cover;
 }
+
+.action-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease-in;
+}
+
+.action-icon > span {
+    margin: 0 0.4rem 0 0.4rem;
+    font-weight: 900;
+}
+
+.action-icon:hover {
+    color:  rgb(27, 146, 146)
+}
