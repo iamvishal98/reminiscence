@@ -1,0 +1,32 @@
+.profile-card-icon:hover {
+    color: rgb(27, 146, 146);
+
+}
+@media  (max-width:767px) {
+    .profile-card-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .profile-card  {
+        width: calc(100% - 10rem);
+    }
+
+
+    
+}
+
+@media  (max-width:425px) {
+    .profile-card .ant-card-head {
+        margin: 5px;
+
+    }
+
+    .profile-card .ant-card-meta {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+}

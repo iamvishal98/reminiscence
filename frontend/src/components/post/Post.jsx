@@ -1,6 +1,7 @@
-import { Card, Col } from "antd";
+import { Card, Carousel, Col, Divider } from "antd";
 import axios from "axios";
 import { useEffect, useState } from "react";
+import "./post.css";
 const { Meta } = Card;
 const Post = () => {
   const [data, setData] = useState([]);
@@ -16,15 +17,14 @@ const Post = () => {
   useEffect(() => {
     fetchPost();
   }, []);
+
   return (
-    <Col xs={24} sm={12} md={8} lg={6} xl={4}>
-      <Card
-        hoverable
-        cover={<img alt="example" src={data[0]?.selectedFiles[0]} />}
-      >
+    <div className="post-container">
+      <Card cover={<img alt="example" src={data[0]?.selectedFiles[0]} />}>
+        <Divider></Divider>
         <Meta title={data[0]?.title} description={data[0]?.message} />
       </Card>
-    </Col>
+    </div>
   );
 };
 export default Post;
