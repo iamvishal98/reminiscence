@@ -1,114 +1,84 @@
-
-
-.navbar {
-    padding-bottom: 1px;
-    border-bottom: solid 1px #e8e8e8;
-    background-color: white;
-    box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.12),
-      0 6px 16px -11px rgba(0, 0, 0, 0.08);
-    position: sticky;
-    top: 0;
-    margin-bottom: 20px;
-    z-index: 99;
-  }
-  
-  .nav-header {
-    background-color: white;
-    border-bottom: 0;
-    padding: 0 4px 0 24px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo {
-    width: 200px;
-    float: left;
-  }
-  
-  .logo a {
-    display: inline-block;
-    font-size: 20px;
-    text-transform: capitalize;
-  }
-  
-  .navbar-menu {
-    width: calc(100% - 200px);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    
-  }
-  .navbar-menu .ant-layout-header {
-    padding: 0 20px;
-  }
-  
-  .navbar-menu .ant-menu-horizontal {
-    border-bottom: 0;
-  }
-  
-  .navbar-menu .ant-menu-item {
-    padding-bottom: 0px;
-  }
-  
-   .leftMenu {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-
-  .menuButton {
-    float: right;
-    height: 32px;
-    padding: 6px;
-    margin-top: 14px;
-    display: none;
-    background: none;
-    margin-right: 10px;
-  }
-  
-  .ant-drawer-body {
-    padding: 0;
-  }
-  
-  .ant-drawer-body .ant-menu-horizontal > .ant-menu-item,
-  .ant-drawer-body .ant-menu-horizontal > .ant-menu-submenu {
-    display: inline-block;
-    width: 100%;
-  }
-  
-  .ant-drawer-body .ant-menu-horizontal {
-    border-bottom: none;
-  }
-  
-  .ant-drawer-body .ant-menu-horizontal > .ant-menu-item:hover {
-    border-bottom-color: transparent;
-  }
-  
-  .username {
-    display: none;
-    margin-left: 8px;
-  }
-  
-  @media (max-width: 767px) {
-    .menuButton {
-      display: block;
-      margin-right: 10px;
+    .navbar {
+      padding: 0.7rem;
+      border-bottom: solid 1px #e8e8e8;
+      background-color: white;
+      box-shadow: 0 3px 6px -2px rgba(0, 0, 0, 0.12),
+        0 6px 16px -11px rgba(0, 0, 0, 0.08);
+      position: sticky;
+      top: 0;
+      margin-bottom: 20px;
+      z-index: 99;
     }
-  
-    .leftMenu {
+    .navbar .content-wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .left {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo-text {
+      color: rgb(27, 146, 146);
+      text-transform: uppercase;
+      cursor: pointer;
+   
+    }
+
+    .right {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 9rem;
+    }
+
+    .icon-link {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 3rem;
+       color: rgba(0, 0, 0, 0.45);
+    }
+    .header-icon {
+      font-size: 1.2rem;
+      cursor: pointer;
+    }
+
+    .search-bar {
+      margin-left: 1.5rem;
+    }
+
+
+  .search-icon,.search-back  {
+    color: rgba(0, 0, 0, 0.45);
+    font-weight: 900;
+    display: none;
+  }
+
+
+  @media (max-width: 767px) { 
+
+    .search-bar{
+      margin: 0;
       display: none;
     }
-  
-    .logo a {
-      margin-left: -10px;
+
+    .search-icon,.back-active { 
+      display: flex;
+      margin: 0 1rem 0 1rem ;
     }
-  
-    .ant-drawer-title > .brand-font {
-      margin-bottom: 0;
+
+    .mobile {
+      display: flex;
+      align-items: center;
+      flex-direction: row-reverse;
+      position: absolute;
+      background-color: white;
+      width: calc(100% - 0.8rem);
+      height: 100%;
+      z-index: 200;
     }
-  
-    .username {
-      display: inline-block;
-    }
+
   }
-  
