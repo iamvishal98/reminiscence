@@ -1,0 +1,19 @@
+.homepage {
+    padding: 0.6rem;
+}
+.posts-container {
+    width: calc(100% - 50rem);
+}
+
+@media  (max-width:767px) {
+    .homepage  .ant-row {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .posts-container {
+        width: 100%;
+    }
+    
+}

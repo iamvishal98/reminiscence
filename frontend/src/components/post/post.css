@@ -1,0 +1,12 @@
+.post-container {
+    margin-bottom: 50px;
+}
+
+.post-container .ant-card-cover {
+    height: 35rem;
+}
+
+.post-container .ant-card-cover  img {
+    height: 100%;
+    object-fit: cover;
+}
