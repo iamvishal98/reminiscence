@@ -1,0 +1,20 @@
+.post-input-form {
+   padding: 1rem 5rem 0 5rem;
+}
+
+.post-input-form .ant-input:hover {
+    border-color: rgb(27, 146, 146);
+
+}
+
+.post-input-form .ant-upload.ant-upload-select:not(.ant-upload-disabled):hover {
+    border-color: rgb(27, 146, 146) !important;
+}
+
+.post-input-form .ant-btn:hover {
+    border-color: rgb(27, 146, 146);
+}
+
+.post-input-form .ant-btn:hover span {
+    color: rgb(27, 146, 146);
+}

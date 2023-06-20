@@ -3,6 +3,7 @@ import { Button, Form, Input, Upload } from "antd";
 import TextArea from "antd/es/input/TextArea";
 import React, { useEffect } from "react";
 import axios from "axios";
+import "./reminiscenceform.css";
 
 const ReminiscenceFrom = () => {
   const onFinish = (data) => {
@@ -30,8 +31,8 @@ const ReminiscenceFrom = () => {
   };
 
   return (
-    <>
-      <Form layout="vertical" onFinish={onFinish}>
+    <div className="content-wrapper">
+      <Form layout="vertical" onFinish={onFinish} className="post-input-form">
         <Form.Item label="Title" name="title">
           <Input />
         </Form.Item>
@@ -59,9 +60,9 @@ const ReminiscenceFrom = () => {
           </Upload>
         </Form.Item>
 
-        <Button htmlType="submit">Button</Button>
+        <Button htmlType="submit">Post</Button>
       </Form>
-    </>
+    </div>
   );
 };
 
